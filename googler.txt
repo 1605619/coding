@@ -1,0 +1,87 @@
+
+Ask questions:
+requirement gathering before hand, interviewer wont tell himself/herself. Make a list of items you should clear out. 
+
+While thinking of solution, ask if you're thinking in right direction? - to save your time
+
+Ask expected time commplexity?
+production ready code? 
+
+
+Ask interviewer what expected from question? -> just mention brute force in 30-60 secs and move to optimised solution with TC, while discussuig the solution ask interviewer if TC for this solution meets the expectations of que before coding it out, just be in sync with interviewer. Sometimes this also happen that follow up question was supposed to be on improving TC.
+
+
+Note: Use pass by reference as much as possible as it's better in terms of space and time than pass by value
+If you don’t want the function to modify the original object but still want the efficiency benefits, use a "const reference". This avoids copying while preventing modification.
+
+----------------------------------------------
+
+
+STL -> can be used
+
+
+I like to draw things while solving a question, is it fine for me to connect using two different gmail accoint to meet, and probably if can share screen on my ipad to draw to explain my thinking during question and then share screen on laptop to write code for it?
+
+Or I can use my own miro board or will a whiteboard will be shared with me?
+
+
+-> Nope
+
+I understood in process - google looks for simpler solutions, which are easily codable, and have less time complexity. Is it correct? -> Nope
+
+Is production ready code asked in interview or pseudo code works? as it's on google docs so are we asked to run it against test cases, and probably test cases are dry run? -> dependends upon interviewer if they are looking for prod ready or somewhat prod ready code.
+
+
+Can we ask interviewer when given question, the expected time complexity from this problem? - what is recommended here? -> they won't tell it usually as that can lead to hint of expected DSA
+
+
+
+
+
+
+
+Follow-up questions? - what kind of follow ups questions are usually there? and does mostly every interview will have at least one follow ups? - How can I prepare specifically for this? - specific topics, type of questions etc?
+
+
+From SWE-3 interview expectations from coding standard, what things I should do during interviews like requirement gathering before hand?, coding standard, modularity? 
+are design questions also asked like design chess, or snake game to test DSA + OOPS?
+
+
+
+How google define production ready code in a coding interview?
+
+Are there any things we should not do or missing doing, which usally lead to no hire? 
+
+Any tricks if can help me with google docs? - 
+
+
+
+
+Career Trajection for SDE-3, how it's after that?
+role expectations and impact for SDE-3, and compared to SSE 
+
+At what level it's expected to start leading some engineers or projects at Google? - what are expectations of SE from management side?
+
+What if a person gets SDE-2 with some exp - pros and cons, and how would be the tracjectory in that case
+How expectations would change, and if one wants to take lead on features and end to end design?
+
+
+
+Switch tech? How easy to try different tech stack? - flexiibilty? - what's the process?
+Swicthing teams or region? 
+Region?
+
+What's the best thing you found at Google might not be common with other companies? - why google is google from a googler perspective
+
+
+searfching sorting dP, grpah
+
+- hot topics -> sorting, searching, dp, etc
+- design questions like snake ladder etc? - Is OOPS expected? or if it's just DSA?
+- speed? - what's expected from interview?
+- can someone apply to google for different regions (to avoid cooldown period)?
+
+- can someone expect system design round at SDE-3 role if requested?
+- system design interviews - what google looks/expectations at SDE3-SSE level? - how to prepare?
+
+- 
