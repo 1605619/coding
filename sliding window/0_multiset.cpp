@@ -6,11 +6,9 @@ using namespace std;
 
 /*
 
-	Multiset:
-
-
-
-
+	Multiset: Balanced BST (self balancing BST) -> O(logn) for insertion, deletion, search. 
+	Multiset allows duplicates, and stores elements in sorted order.
+	Multiset is implemented as red-black tree, which is a self balancing BST.
 
 */
 
@@ -24,6 +22,22 @@ void testMultiset(vi &nums) {
 
 		// begin() - O(1) -> pointer to smallest element in multiset
 		// rbegin() - O(1) -> pointer to largest element in multiset [Note: end() gives pointer next to last element]
+
+		/*
+			Multiset is implemented as red-black tree, which is a self balancing BST, and if we want to find the smallest element, 
+			we can keep going to the most left node from root node, which will be the smallest element.
+
+			Similarly, if we want to find the largest element, we can keep going to the most right node from root node, 
+			which will be the largest element.
+
+			Now to find the smallest or largest element, begin() does NOT walk down the tree every time.
+
+			Instead, it maintains a pointer to the smallest/largest element in the tree, and returns it directly.
+
+			Therefore, TC: O(1) for begin() and rbegin()
+
+			Note: end() gives pointer next to last element, and rbegin() gives pointer to last element.
+		*/
 		cout<<*m.begin()<<" : "<<*m.rbegin()<<endl;
 	}
 
@@ -47,6 +61,18 @@ void testMultiset(vi &nums) {
 			- first find location to it's first occurance -> m.find(3)
 			- delete only that location -> m.erase(address)
 
+		So to delete the first occurance of 3, we would do:
+			m.erase(m.find(3));
+
+		Note: m.find(3) returns a pointer to the first occurance of 3 in the multiset.
+
+		Therefore, TC: O(logn) for m.find(3), as it walks down the tree to find the first occurance of 3.
+
+		And then, we can delete that pointer using m.erase(pointer)
+
+		Therefore, TC: O(1) for m.erase(pointer), as it directly deletes the node from the tree.
+
+		Note: m.erase(pointer) is constant time operation, but what about RBT rebalancing? It can take O(logn) time.
 
 		TC:
 		value = 3;
@@ -65,7 +91,6 @@ void testMultiset(vi &nums) {
 		2. m.erase(iterator) -> constant
 
 		if provided a memory location, it will directly delete it. (note: rebalancing can be required which can take O(logn))
-
 	*/
 	
 
